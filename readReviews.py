@@ -26,3 +26,10 @@ for dataNumber in data:
 sumAverageLen /= dataCount
 print('檔案讀取完了，總共有：', dataCount, '筆資料')
 print('每筆data的平均長度是：', sumAverageLen)
+
+new = []
+for d in data:
+	if len(d) <= 100:
+		new.append(d)
+print('總共有', len(new), '筆留言長度小於100')
+print(new[0])
